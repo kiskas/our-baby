@@ -38,17 +38,6 @@ p {
   margin: 10px 0 10px 0;
 }
 
-a   {
-    color: #484848;
-    font-size: 14px;
-    outline: none;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #8f8f8f;
-    text-decoration: none;
-}
 
 h1,
 h2,
@@ -86,58 +75,6 @@ hr	{
 }
 
 
-/* btn
-======================= */
-
-.btn.btn-search	{
-	font-size: 12px;
-	font-style: italic;
-	padding: 3px 8px 3px 8px;
-}
-
-.btn:hover,
-.btn:focus {
-	color: #ffffff;
-}
-
-.btn-default {
-	color: #737373;
-}
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
-.btn-default.active,
-.open .dropdown-toggle.btn-default {
-	color: #737373;
-}
-.btn-primary {
-	background-color: #292929;
-	border-color: #292929;
-}
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-	background-color: #6f6f6f;
-	border-color: #4e4c4c;
-}
-
-.btn-default .caret {
-	border-top-color: #737373;
-}
-
-.dropup .btn-default .caret {
-	border-bottom-color: #737373;
-}
-
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .nav .open > a, .nav .open > a:hover, .nav .open > a:focus   {
-    background: none;
-    border: none;
-}
-
-
-/* --- */
 
 
 /* CUSTOMIZE THE NAVBAR
