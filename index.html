@@ -3,25 +3,15 @@
 <head>
     <meta charset="utf-8">
     <base href=""/>
-    <title>Ваш ребенок</title>
+    <title></title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-
-    <link rel="shortcut icon" href="favicon.ico">
-
+    <link rel="shortcut icon" href="">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="scripts/lib/html5shiv.js"></script>
-    <![endif]-->
-
-
 
     <!-- Bootstrap core JavaScript
     =================================================
@@ -29,7 +19,9 @@
     <script src="scripts/lib/jquery-1.8.3.min.js"></script>
     <script src="scripts/lib/bootstrap.min.js"></script>
     <script src="scripts/lib/holder.js"></script>
+    <link href="css/responsiveslides.css" rel="stylesheet">
     <script src="scripts/lib/responsiveslides.min.js" type="text/javascript"></script>
+
 
 </head>
 
@@ -37,161 +29,190 @@
 <!-- NAVBAR
 ================================================== -->
 <body>
-
-
-
-<!-- NAVBAR
-================================================== -->
-<div class="navbar-wrapper">
-    <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-    <div class="container">
-
-        <div class="navbar navbar-inverse">
-            <div class="navbar-inner">
-                <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="brand" href="#">Project name</a>
-                <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-                <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li class="nav-header">Nav header</li>
-                                <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
+<div class="wrapper">
+    <div class="content">
+        <div class="menu-container">
+            <nav class="navbar navbar-default container" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="brand" href="/"><img src="images/logo.png" alt="Наши любимые кошки и котята" title="Наши любимые кошки и котята"></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Меню</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li >
+                        <a href="" title="" class="active">Фотогалерея</a>
+                    </li>
+                        <li >
+                            <a href="" title="">Статьи</a>
+                        </li>
+                        <li >
+                            <a href="" title="">Видео</a>
+                        </li>
+                        <li >
+                            <a href="" title="">FAQ</a>
+                        </li>
+                        <li  class="last">
+                            <a href="" title="">Калькулятор кошки</a>
                         </li>
                     </ul>
-                </div><!--/.nav-collapse -->
-            </div><!-- /.navbar-inner -->
-        </div><!-- /.navbar -->
+                   <!--<form class="navbar-form navbar-left" role="search" method="post" action="" id="ajaxSearch_form">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-seach" name="search" placeholder="Поиск">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-search">Искать</button>
+                    </form>-->
 
-    </div> <!-- /.container -->
-</div><!-- /.navbar-wrapper -->
 
-
-
-<!-- Carousel
-================================================== -->
-<div id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="./image/slide-01.jpg" alt="">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Example headline.</h1>
-                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-                </div>
-            </div>
+                </div><!-- /.navbar-collapse -->
+            </nav>
         </div>
-        <div class="item">
-            <img src="./image/slide-02.jpg" alt="">
-            <div class="container">
+    </div> <!-- /.content -->
+
+    <!-- Carousel
+    ================================================== -->
+    <div class="gallery">
+        <ul id="slides1">
+            <li>
+                <img src="https://pp.vk.me/c619820/v619820015/4f8a/M481yn3Qqu4.jpg" alt="Собираем кошку в дорогу, кошка едет на дачу, кошка на даче" title="Собираем кошку в дорогу, кошка едет на дачу, кошка на даче">
                 <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <a class="btn btn-large btn-primary" href="#">Learn more</a>
+                    <h3>Собираем кошку в дорогу, кошка едет на дачу, кошка на даче</h3>
+                    <p><a href="sobiraem-koshky-v-dorogy-ili-koshka-edet-na-dachy.html" class="btn btn-primary btn-sm">читать далее »</a></p>
                 </div>
+            </li><li>
+            <img src="https://pp.vk.me/c619820/v619820015/4fae/Rmsxs-5lgFo.jpg" alt="Этот взгляд" title="Этот взгляд">
+            <div class="carousel-caption">
+                <h3>Этот взгляд</h3>
+
             </div>
-        </div>
-        <div class="item">
-            <img src="./image/slide-03.jpg" alt="">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>One more for good measure.</h1>
-                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-                </div>
+        </li><li>
+            <img src="https://pp.vk.me/c619820/v619820015/4fa5/kAEqZyj5BtE.jpg" alt="Попробуй радугу" title="Попробуй радугу">
+            <div class="carousel-caption">
+                <h3>Попробуй радугу</h3>
+
             </div>
-        </div>
+        </li><li>
+            <img src="https://pp.vk.me/c540100/c620316/v620316015/70f9/RiqOL-I8sFI.jpg" alt="Наши любимые кошки" title="Наши любимые кошки">
+            <div class="carousel-caption">
+                <h3></h3>
+
+            </div>
+        </li><li>
+            <img src="https://pp.vk.me/c619820/v619820015/4fb7/kBVYqI_Ml_A.jpg" alt="Почему ваша кошка вас игнорирует?" title="Почему ваша кошка вас игнорирует?">
+            <div class="carousel-caption">
+                <h3>Почему ваша кошка вас игнорирует?</h3>
+                <p><a href="pochemy-koshka-namerenno-ignoriryet.html" class="btn btn-primary btn-sm">читать далее »</a></p>
+            </div>
+        </li><li>
+            <img src="https://pp.vk.me/c540100/c620316/v620316015/7102/uMnQlTUl-Og.jpg" alt="Хищник" title="Хищник">
+            <div class="carousel-caption">
+                <h3></h3>
+
+            </div>
+        </li>
+        </ul>
     </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div><!-- /.carousel -->
+    <!-- /.end -->
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <h1>Popular info</h1>
+            <div class="col-md-4">
+                <h2><a href="articles.html">Ut wisi enim ad minim veniam, quis nostrud exerci tation</a></h2>
+                <a href="articles.html"><img class="img-thumbnail" src="images/ico-category1.jpg" alt="Интересные статьи про кошек" title="Интересные статьи про кошек" /></a>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-md-4">
+                <h2><a href="articles.html">Ut wisi enim ad minim veniam, quis nostrud exerci tation</a></h2>
+                <a href="articles.html"><img class="img-thumbnail" src="images/ico-category1.jpg" alt="Интересные статьи про кошек" title="Интересные статьи про кошек" /></a>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            </div><!-- /.col-lg-4 -->
+
+
+            <div class="col-md-4">
+                <h2><a href="articles.html">Ut wisi enim ad minim veniam, quis nostrud exerci tation</a></h2>
+                <a href="articles.html"><img class="img-thumbnail" src="images/ico-category1.jpg" alt="Интересные статьи про кошек" title="Интересные статьи про кошек" /></a>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            </div><!-- /.col-lg-4 -->
+
+
+            <div class="col-md-4">
+                <h2><a href="articles.html">Ut wisi enim ad minim veniam, quis nostrud exerci tation</a></h2>
+                <a href="articles.html"><img class="img-thumbnail" src="images/ico-category1.jpg" alt="Интересные статьи про кошек" title="Интересные статьи про кошек" /></a>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            </div><!-- /.col-lg-4 -->
 
 
 
-<!-- Marketing messaging and featurettes
-================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
+            <div class="clear"></div>
 
-<div class="container marketing">
+        </div><!-- /.row -->
+        <hr class="featurette-divider">
+        <div class="row">
+            <h3>Добавленные статьи:</h3>
+            <div class="col-lg-3 article-main">
+                <h4><a href="abissinskaya-poroda.html">Абиссинская порода</a></h4>
+                <p>Среди многочисленных пород выделяется Абиссинская порода. Немножко об Абиссинской породе.</p>
+            </div><!-- /.col-lg-4 -->			<div class="col-lg-3 article-main">
+            <h4><a href="devon-reksy.html">Девон-рекс</a></h4>
+            <p>Девон-рекс - энергичные кошки.</p>
+        </div><!-- /.col-lg-4 -->			<div class="col-lg-3 article-main">
+            <h4><a href="koshka-sphinks.html">Сфинкс</a></h4>
+            <p>Сфинкс - кошка требующая серьезного ухода, будьте внимательны при выборе кошки.</p>
+        </div><!-- /.col-lg-4 -->			<div class="col-lg-3 article-main">
+            <h4><a href="persidskaya-koshka.html">Персидская кошка</a></h4>
+            <p>Немножко о персидских кошках</p>
+        </div><!-- /.col-lg-4 -->
+        </div>
+        <div class="article-link">
+            <a href="/articles.html">Все статьи</a>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <h3></h3>
+                <p></p>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div><!-- /.container -->
 
-    <!-- Three columns of text below the carousel -->
+</div><!-- /.wrapper -->
+<!-- FOOTER -->
+<footer>
     <div class="row">
-        <div class="span4">
-            <img class="img-circle" data-src="holder.js/140x140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-            <img class="img-circle" data-src="holder.js/140x140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-            <img class="img-circle" data-src="holder.js/140x140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-    </div><!-- /.row -->
+        <div class="col-md-4">
+            <ul class="nav nav-pills"><li >
+                <a href="" title="Фотогалерея про кошек и котят">Фотогалерея</a>
+            </li>
+                <li >
+                    <a href="" title="Интересные статьи про кошек">Статьи</a>
+                </li>
+            </ul>
 
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="featurette">
-        <img class="featurette-image pull-right" src="./image/browser-icon-chrome.png">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-4 soc">
+            <!--<a href="" class="twitter"></a>
+            <a href="" class="facebook"></a>
+            <a href="" title="Подпишись на рассылку по E-mail"></a>-->
+            <a href="" class="google" target="_blank" title="Новости в Google+"></a>
+            <a href="" class="vk" target="_blank" title="Мы Вконтакте"></a>
+            <a href="" class="rss" target="_blank" title="RSS подписка"></a>
+        </div>
+        <div class="col-md-4">
+            <p>2013 - 2014 &middot;  &copy; Angel</p>
+        </div>
     </div>
+    <div class="counter">
 
-    <hr class="featurette-divider">
-
-    <div class="featurette">
-        <img class="featurette-image pull-left" src="./image/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="featurette">
-        <img class="featurette-image pull-right" src="./image/browser-icon-safari.png">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-
-    <!-- FOOTER -->
-    <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
-
-</div><!-- /.container -->
-
+    </div> <!-- /.counter -->
+</footer>
 </body>
 </html>
