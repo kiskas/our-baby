@@ -439,6 +439,15 @@ background: none;
     color: #f55651;
 }
 
+.menu-container  {
+    background: #ffffff;
+}
+
+.content    {
+    position: relative;
+    top: 0;
+    height: 95px;
+}
 
 /* --- */
 
@@ -487,9 +496,6 @@ background: none;
 
 	.navbar-default .navbar-nav > li.active {
 		background: url('../images/menu-act.jpg') no-repeat center bottom;
-	}
-	.navbar-default .navbar-nav > li {
-        height: 50px;
 	}
 
 }
@@ -632,10 +638,6 @@ footer .nav > li > a {
     .navbar-default .navbar-nav > li.active {
         background: url('../images/menu-act.jpg') no-repeat center bottom;
     }
-
-    .navbar-default .navbar-nav > li {
-        height: 50px;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -646,10 +648,6 @@ footer .nav > li > a {
 
     .navbar-default .navbar-nav > li.active {
         background: url('../images/menu-act.jpg') no-repeat center bottom;
-    }
-
-    .navbar-default .navbar-nav > li {
-        height: 50px;
     }
 
     .navbar-collapse.collapse .navbar-form  {
